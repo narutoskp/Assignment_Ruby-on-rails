@@ -1,0 +1,26 @@
+<p>
+  <strong>floor:</strong>
+  <%= @article.floor %>
+</p>
+ 
+<p>
+  <strong>room:</strong>
+  <%= @article.room %>
+</p>
+
+<h2>Customers</h2>
+<%= render @article.customers %>
+
+<h2>Employee:</h2>
+<%= render @article.employees %>
+
+
+<h2>Add Customers:</h2>
+<%= render 'customers/form' %>
+
+
+<h2>Add Employee:</h2>
+<%= render 'employee/form' %>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

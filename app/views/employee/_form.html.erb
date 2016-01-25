@@ -1,0 +1,10 @@
+<%= form_for([@article, @article.employees.build]) do |f| %>
+  <p>
+    <%= f.label :NameEmployee %><br>
+    <%= f.text_field :employee %>
+  </p>
+  <p>
+    <%= f.submit %>
+  
+  </p>
+<% end %>
